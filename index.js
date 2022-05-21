@@ -32,6 +32,11 @@ app.get("/dashboard", function(req, res)
     res.render("dashboard")
 })
 
+app.get("/form", function(req,res)
+{
+    res.render("/form")
+})
+
 app.get("/faq", function(req, res)
 {
     res.render("faq")
