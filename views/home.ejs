@@ -1,6 +1,55 @@
-<%- include("partials/head") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home 
+    </title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/script.js"></script>
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+</head>
 <body>    
-    <%- include("partials/navbar") %>
+    <nav class="nav container">
+        <a href="/">
+        <i class='bx bx-circle nav__logo-icon'><img src="/images/tempImageForSave-9-430x430.jpeg" alt="" width="100px"></i> 
+        </a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/getstarted" class="nav__link">Get Started</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/powertracer" class="nav__link">PowerTracer</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://support.enosi.energy/en/?q=community" class="nav__link">FAQ</a>
+                </li>
+            </ul>
+    
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+    
+        <div class="nav__btns">
+            <!-- Theme change button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+    
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
 
     <section class="home" id="home">
         <div class="home__container container grid">
@@ -8,13 +57,14 @@
 
             <div class="home__data">
                 <h1 class="home__title">
-                    Enosi <br> 
+                    PowerTracer <br> 
+                    <h2> Powered by Enosi</h2>
                 </h1>
                 <p class="home__description">
-                    Changing the way our energy is used 
+                    Traceability for energy usage
                 </p>
                 <a href="/getstarted" class="button button--flex">
-                    <button> Get Started</button> <i class="ri-arrow-right-down-line button__icon"></i>
+                    Get Started <i class="ri-arrow-right-down-line button__icon"></i>
                 </a>
             </div>
         </div>

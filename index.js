@@ -27,9 +27,9 @@ app.get("/about", function(req, res)
     res.render("about")
 })
 
-app.get("/dashboard", function(req, res)
+app.get("/powertracer", function(req, res)
 {
-    res.render("dashboard")
+    res.render("powertracer")
 })
 
 app.get("/form", function(req,res)

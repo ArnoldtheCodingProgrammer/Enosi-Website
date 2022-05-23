@@ -52,7 +52,7 @@ html {
 }
 
 body {
-    background-color: #60a9ff;
+    background-color: lightgreen;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@ body {
 }
 
 .pricing1-img {
-    margin-left: 70px;
+    margin-left: 65px;
     margin-bottom: 0px;
     max-width: 100%;
 }
