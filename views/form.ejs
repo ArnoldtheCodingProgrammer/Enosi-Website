@@ -1,5 +1,59 @@
-<%= include(partials/head) %> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Enosi 
+    </title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/selection.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+</head>
 
 <body>
+
+    <form action="http://localhost:3000/getstarted" method="post">
+        <label for="suburb">Which suburb are you from?</label> <br>
+        <input type="number" id="subrb" name="suburb"> <br>
+        <br>
+        <label for="energycompany">Which energy provider are you with?</label> <br>
+        <input type="text" id="energycompany" name="energycompany"> <br>
+        <br>
+        <label for="energyuse">How much energy do you use per quarter (kWh)?</label> <br>
+        <input type="number" id="energyuse" name="energyuse"> <br>
+        <br>
+        <label for="solarpanel">Does your residence have solar panels?</label> <br>
+        <input type="radio" id="yes" name="yes" value="yes"> 
+        <label for="yes">Yes</label> <br>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no">No</label> <br>
+        <input type="radio" id="notsure" name="notsure" value="notsure"> 
+        <label for="notsure">Not sure</label> <br>
+
+        <br>
+        <label for="solarpanel">Does your residence have a smart meter?</label> <br>
+        <input type="radio" id="yes" name="yes" value="yes"> 
+        <label for="yes">Yes</label> <br>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no">No</label> <br>
+        <input type="radio" id="notsure" name="notsure" value="notsure"> 
+        <label for="notsure">Not sure</label> <br>
+
+
+        <br>
+        <br>
+        <button>Submit</button>
+        
+
+    </form>
+
     
+    
+    
+
+
 </body>
+
+</html>

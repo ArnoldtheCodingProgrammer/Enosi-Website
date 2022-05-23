@@ -34,7 +34,7 @@ app.get("/powertracer", function(req, res)
 
 app.get("/form", function(req,res)
 {
-    res.render("/form")
+    res.render("form")
 })
 
 app.get("/faq", function(req, res)
