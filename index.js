@@ -46,8 +46,11 @@ app.get("/faq", function(req, res)
 app.post("/form", function(req, res)
 {
     const {energycompany, solarpanel, smartmeter} = req.body
+    global.solarpanel = solarpanel
+    global.smartmeter = smartmeter
     if (energycompany === "Energy Local" )
     {
+
         res.redirect("onlyneedpowertracer")
     }
     else
@@ -64,5 +67,7 @@ app.get("/chooseenergyprovider", function(req,res)
 
 app.get("/onlyneedpowertracer", function(req,res)
 {
-    res.render("onlyneedpowertracer")
+    const solar = solarpanel
+    const status = smartmeter
+    res.render("onlyneedpowertracer", {status, solar})
 })
