@@ -73,10 +73,10 @@ app.get("/onlyneedpowertracer", function(req,res)
     res.render("onlyneedpowertracer", {status, solar})
 })
 
-app.get("/payment", function(req,res)
+app.get("/paymentyes", function(req,res)
 {
     const company = energycompany
-    res.render("payment", {company})
+    res.render("paymentyes", {company})
 
 })
 

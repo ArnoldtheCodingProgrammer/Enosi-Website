@@ -18,31 +18,22 @@
  
     <p>
         <% if (company !== "Energy Local"){%>
-        <h2> Thank you for switching from <%= company %> to Energy Local</h2>
-        <% } %> 
+        <h1> Thank you for switching to <b>100% </b> carbon-free energy </h1>
+        <p>
+            From  <b>$300 </b> to <b>$250 </b> per quarter with Energy Local you will be saving <b>$50 or 16%</b> per quarter 
+        </p>
+        <p>
+            Therefore, your monthly payment will be <b>$65 </b> per month or <b> $260 </b> per quarter
+        </p>
+        <% }else { %> 
+            <h1>Thank you for trying Powertracer!</h1>
+            <h2>Further details will be emailed to your account</h2>
+        <% } %>
     </p>
-
-    <h1>
-        Thank you for switching to <b>100% </b> carbon-free energy 
-    </h1>
-
-    <p>
-        From  <b>$300 </b> to <b>$250 </b> per quarter with Energy Local you will be saving <b>$50 or 16%</b> per quarter 
-    </p>
-
-     
  
-    <p>
-        With the Powertracer by Enosi add on of <b>$2.50</b> per month
-    </p>
-    
-    <p>
-        Your monthly payment will be <b>$65 </b> per month or <b> $260 </b> per quarter
-    </p>
-    
 
     <a href="/congrats">
-    <button>Go Ahead!</button>
+    <button >Done</button>
     </a>
  
  </body>
