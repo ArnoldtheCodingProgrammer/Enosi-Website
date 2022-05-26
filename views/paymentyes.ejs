@@ -7,7 +7,7 @@
     <title>
         Home 
     </title>
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/powertracer.css">
     <script src="/script.js"></script>
     <script src="/public/js/jquery.js"></script>
     <script src="/public/js/bootstrap.min.js"></script>
@@ -19,12 +19,16 @@
     <p>
         <% if (company !== "Energy Local"){%>
         <h1> Thank you for switching to <b>100% </b> carbon-free energy </h1>
+        <br>
         <p>
             From  <b>$300 </b> to <b>$250 </b> per quarter with Energy Local you will be saving <b>$50 or 16%</b> per quarter 
         </p>
         <p>
             Therefore, your monthly payment will be <b>$65 </b> per month or <b> $260 </b> per quarter
         </p>
+        <br>
+        <h1>Thank you for trying PowerTracer!</h1>
+
         <% }else { %> 
             <h1>Thank you for trying Powertracer!</h1>
             <h2>Further details will be emailed to your account</h2>
@@ -33,7 +37,7 @@
  
 
     <a href="/congrats">
-    <button >Done</button>
+    <button class="button">Done</button>
     </a>
  
  </body>

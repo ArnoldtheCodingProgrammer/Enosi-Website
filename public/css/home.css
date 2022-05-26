@@ -83,6 +83,8 @@ body{
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: .4s; /*For animation dark mode*/
 }
 

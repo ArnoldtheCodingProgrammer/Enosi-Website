@@ -84,3 +84,8 @@ app.get("/congrats", function(req,res)
 {
     res.render("congrats")
 })
+
+app.get("/nextbusinessenergy", function(req, res)
+{
+    res.render("nextbusinessenergy")
+})

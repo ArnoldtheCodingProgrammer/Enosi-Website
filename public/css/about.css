@@ -3,8 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem; /*56px*/
-
+  --header-height: 3.5rem; 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
@@ -83,6 +82,8 @@ body{
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: .4s; /*For animation dark mode*/
 }
 
@@ -90,7 +91,6 @@ button{
   cursor: pointer;
   border: none;
   outline: none;
-
 }
 
 h1,h2,h3{
@@ -177,7 +177,7 @@ body.dark-theme{
   }
 
   .grid{
-    display: grid;
+    /* display: grid; */
   }
   
   .main{
@@ -377,12 +377,10 @@ body.dark-theme{
     border-radius: .5rem;
     font-weight: var(--font-medium);
     transition: .3s;
-    margin-top: 25px;
-    margin-left: 300px;
   }
   
   .button:hover{
-    background-color: lightgreen;
+    background-color: var(--first-color-alt);
   }
   
   .button__icon{
@@ -424,7 +422,9 @@ body.dark-theme{
   }
   
   .about__description{
+    font-weight: bold;
     margin-bottom: var(--mb-2);
+ 
   }
   
   .about__details{
@@ -437,6 +437,7 @@ body.dark-theme{
     display: inline-flex;
     column-gap: .5rem;
     font-size: var(--small-font-size);
+    font-weight: bold;
   }
   
   .about__details-icon{
@@ -447,7 +448,7 @@ body.dark-theme{
   
   /*=============== STEPS ===============*/
 .steps__bg{
-    background-color: lightsteelblue;
+    background-color: var(--first-color);
     padding: 3rem 2rem 2rem;
     border-radius: 1rem;
   }
@@ -469,7 +470,7 @@ body.dark-theme{
   
   .steps__card-number{
     display: inline-block;
-    background-color: lightblue;
+    background-color: var(--first-color-alt);
     color: #FFF;
     padding: .5rem .75rem;
     border-radius: .25rem;
@@ -485,7 +486,6 @@ body.dark-theme{
   
   .steps__card-description{
     font-size: var(--small-font-size);
-    color: black;
   }
   
   .steps__card:hover .steps__card-number{
@@ -908,6 +908,7 @@ body.dark-theme{
     .contact__container,
     .footer__container{
       grid-template-columns: repeat(2, 1fr);
+      margin-top: -80px;
     }
     
     .home{
@@ -946,12 +947,12 @@ body.dark-theme{
     }
   
     .section{
-      margin-top: -100px;
       padding: 8rem 0 1rem;
     }
     .section__title,
     .section__title-center{
       font-size: var(--h1-font-size);
+      color: lightgreen;
     }
   
     .home{
