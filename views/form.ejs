@@ -17,16 +17,21 @@
 </head>
 
 <body>
-
-
     <form class="panel" action="/form" method="post">
 
         <br>
         <br>
         <br>
+        <label for="email">What is your email?</label> <br>
+        <input class="button" type="text" id="email" name="email"> <br>
+        <br>
 
-        <label for="suburb">Which suburb are you from?</label> <br>
-        <input class="button" type="number" id="subrb" name="suburb"> <br>
+        <label for="number">What is your number?</label> <br>
+        <input class="button" type="number" id="number" name="number"> <br>
+        <br>
+    
+        <label for="suburb">Where is your place of residence?</label> <br>
+        <input class="button" type="text" id="subrb" name="suburb"> <br>
         <br>
         <label for="energycompany">Which energy provider are you with?</label> <br>
         <input class="button" type="text" id="energycompany" name="energycompany" > <br>
@@ -56,6 +61,16 @@
 
 
         <br>
+        <label for="energyretailer">How did you here about Powertracer/Enosi?</label> <br>
+        <input type="radio" id="energyretailer" name="hearaboutenosi" value="energyretailer"> 
+        <label for="energyretailer">My Energy Retailer</label> <br>
+        <input type="radio" id="worthofmouth" name="hearaboutenosi" value="worthofmouth">
+        <label for="worthofmouth">Word of Mouth</label> <br>
+        <input type="radio" id="socialmedia" name="hearaboutenosi" value="socialmedia"> 
+        <label for="socialmedia">Social Media</label> <br>
+
+        <br>
+
         <button class="pricing-button">Submit</button>
         
 

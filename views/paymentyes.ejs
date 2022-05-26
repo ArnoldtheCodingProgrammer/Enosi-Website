@@ -7,38 +7,34 @@
     <title>
         Home 
     </title>
-    <link rel="stylesheet" href="/css/powertracer.css">
+    <link rel="stylesheet" href="/css/paymentyes.css">
     <script src="/script.js"></script>
     <script src="/public/js/jquery.js"></script>
     <script src="/public/js/bootstrap.min.js"></script>
 </head>
 
 <body>    
-    <h1>Payment Section:</h1>
- 
-    <p>
-        <% if (company !== "Energy Local"){%>
-        <h1> Thank you for switching to <b>100% </b> carbon-free energy </h1>
-        <br>
-        <p>
-            From  <b>$300 </b> to <b>$250 </b> per quarter with Energy Local you will be saving <b>$50 or 16%</b> per quarter 
-        </p>
-        <p>
-            Therefore, your monthly payment will be <b>$65 </b> per month or <b> $260 </b> per quarter
-        </p>
-        <br>
-        <h1>Thank you for trying PowerTracer!</h1>
 
-        <% }else { %> 
-            <h1>Thank you for trying Powertracer!</h1>
-            <h2>Further details will be emailed to your account</h2>
-        <% } %>
-    </p>
- 
+    <section class="home" id="home">
+        <div class="home__container container grid">
+            <img src="img/pic1.jpeg" alt="" class="home__img">
+            <div class="home__data">
+                <h1 class="home__title">
+                    <% if (company !== "Energy Local"){%>
+                        <h1> Thank you for switching to <b>100% </b> carbon-free energy </h1>
+                        <% }%> 
+                    <h2> Thank you for trying Powertracer!</h2>
+                </h1>
+                <p class="home__description">
+                    Further details will be emailed to your account
+                </p>
+                <a href="/" class="button button--flex">
+                    Finish</i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <a href="/congrats">
-    <button class="button">Done</button>
-    </a>
  
  </body>
  </html>

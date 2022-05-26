@@ -13,48 +13,51 @@
     <script src="/public/js/bootstrap.min.js"></script>
 </head>
 <body>    
-   <h1>Benefits of Power Tracer:</h1>
 
-   <p>
-       Powertracer allows users to have traceability of where their energy comes from
-   </p>
-   <br>
-   <p>
-    
+    <section class="about section container" id="about">
+        <div class="about__container">
+            <h1>Benefits of Power Tracer:</h1>
 
-   </p>
-   <br>
-
-   <p>
-        <%if (solar == "yes") { %> 
-            <h3>If you have solar panels, you can ultilise Powertracer's trading platform to trade your excess energy to other Powertracer users</h2>
+            <p>
+                Powertracer allows users to have traceability of where their energy comes from
+            </p>
             <br>
-            <h3>
-                Trading opportunities include being able to trade your excess energy to people that you konw 
-                There will be options to trade with people that you know (all users must be using Powertracer)
-                Or you can trade blindly to your own community at a price that you decide
-            </h3>
-        <% } else {%>
-            Trading opportunities include being able to purchase carbon-free energy from solar/wind/hydro farms 
-            Traceability and 
-        <% } %> 
+            <br>
+         
+            <p>
+                 <%if (solar == "yes") { %> 
+                     <h3>If you have solar panels, you can ultilise Powertracer's trading platform to trade your excess energy to other Powertracer users</h2>
+                     <br>
+                     <h3>
+                         Trading opportunities include being able to trade your excess energy to people that you konw 
+                         There will be options to trade with people that you know (all users must be using Powertracer)
+                         Or you can trade blindly to your own community at a price that you decide
+                     </h3>
+                 <% } else {%>
+                     Trading opportunities include being able to purchase carbon-free energy from solar/wind/hydro farms 
+                     Traceability and 
+                 <% } %> 
+            </p>
+            <br>
+            <p>
+                 <% if (status == "no"){ %> 
+                     <h3 style="color: black"> NOTE: As you do not have a smart meter, a 2 week waiting period is needed in order for your energy retailer to swap your old meter for a smart meter in order to use Powertracer </h3>
+                 <% } %>
+            </p>
+            
+            <a href="/paymentyes">
+             <button class="button">Add Powertracer for Free!</button>
+            </a>
+         
+            <a href="/">
+             <button class="button2">Not interested</button>
+            </a>
+         
+        </div>
+    </section>
 
-   </p>
-   <br>
-   <p>
-        <% if (status == "no"){ %> 
-            <h3> NOTE: As you do not have a smart meter, a 2 week waiting period is needed in order for your energy retailer to swap your old meter for a smart meter in order to use Powertracer </h3>
-        <% } %>
-   </p>
+
    
-   <a href="/paymentyes">
-    <button class="button">Add Powertracer for Free!</button>
-   </a>
-
-   <a href="/">
-    <button class="button">Not interested</button>
-   </a>
-
 
 
 </body>

@@ -54,6 +54,10 @@ app.post("/form", function(req, res)
 
         res.redirect("onlyneedpowertracer")
     }
+    else if (energycompany === "Next Business Energy")
+    {
+        res.redirect("onlyneedpowertracer")
+    }
     else
     {
         res.redirect("chooseenergyprovider")
