@@ -13,17 +13,17 @@
     <script src="/public/js/bootstrap.min.js"></script>
 </head>
 
-<body>    
+<body background="images/pexels-roberto-nickson-2559941.jpg">    
 
     <section class="home" id="home">
         <div class="home__container container grid">
             <img src="img/pic1.jpeg" alt="" class="home__img">
             <div class="home__data">
                 <h1 class="home__title">
-                    <% if (company !== "Energy Local"){%>
+                    <% if (company != "Energy Local" && company != "Next Business Energy"){%>
                         <h1> Thank you for switching to <b>100% </b> carbon-free energy </h1>
-                        <% }%> 
-                    <h2> Thank you for trying Powertracer!</h2>
+                        <% } %> 
+                    <h1> Thank you for trying Powertracer!</h1>
                 </h1>
                 <p class="home__description">
                     Further details will be emailed to your account

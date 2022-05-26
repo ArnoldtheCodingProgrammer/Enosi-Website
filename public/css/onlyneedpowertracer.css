@@ -3,7 +3,8 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem; 
+  --header-height: 3.5rem; /*56px*/
+
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
@@ -81,16 +82,18 @@ textarea{
 body{
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
-  color: hsla(100, 16%, 4%, 1);
+  color: black;
+  transition: .4s; /*For animation dark mode*/
   background-repeat: no-repeat;
   background-size: cover;
-  transition: .4s; /*For animation dark mode*/
+
 }
 
 button{
   cursor: pointer;
   border: none;
   outline: none;
+
 }
 
 h1,h2,h3{
@@ -111,6 +114,15 @@ img{
   height: auto;
 }
 
+p{
+  color: white;
+  font-size: 20px;
+}
+
+
+p:before{
+  content:"• ";
+}
 
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
@@ -174,10 +186,11 @@ body.dark-theme{
     max-width: 968px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
+    margin-bottom: 90px;
   }
 
   .grid{
-    /* display: grid; */
+    display: grid;
   }
   
   .main{
@@ -377,10 +390,27 @@ body.dark-theme{
     border-radius: .5rem;
     font-weight: var(--font-medium);
     transition: .3s;
+    margin-top: 25px;
+    margin-left: 300px;
+  }
+
+  .button2{
+    display: inline-block;
+    background-color: grey;
+    color: black;
+    padding: 0.5rem 1.75rem;
+    border-radius: 1rem;
+    font-weight: 10;
+    transition: .3s;
+    margin-top: 25px;
+    margin-left: 300px;
   }
   
   .button:hover{
-    background-color: var(--first-color-alt);
+    background-color: lightgreen;
+  }
+  .button2:hover{
+    background-color: black;
   }
   
   .button__icon{
@@ -422,10 +452,7 @@ body.dark-theme{
   }
   
   .about__description{
-    font-weight: bold;
     margin-bottom: var(--mb-2);
-    color: white; 
- 
   }
   
   .about__details{
@@ -438,11 +465,6 @@ body.dark-theme{
     display: inline-flex;
     column-gap: .5rem;
     font-size: var(--small-font-size);
-    font-weight: bold;
-    color:white;
-  }
-  .about__details-description:before{
-    content:"• ";
   }
   
   .about__details-icon{
@@ -453,7 +475,7 @@ body.dark-theme{
   
   /*=============== STEPS ===============*/
 .steps__bg{
-    background-color: var(--first-color);
+    background-color: lightsteelblue;
     padding: 3rem 2rem 2rem;
     border-radius: 1rem;
   }
@@ -464,7 +486,7 @@ body.dark-theme{
   }
   
   .steps__title{
-    color: #FFF;
+    color: rgb(85, 88, 92);
   }
   
   .steps__card{
@@ -475,8 +497,8 @@ body.dark-theme{
   
   .steps__card-number{
     display: inline-block;
-    background-color: var(--first-color-alt);
-    color: #FFF;
+    background-color: lightblue;
+    color: hsla(100, 16%, 4%, 1)#FFF;
     padding: .5rem .75rem;
     border-radius: .25rem;
     font-size: var(--h2-font-size);
@@ -491,6 +513,7 @@ body.dark-theme{
   
   .steps__card-description{
     font-size: var(--small-font-size);
+    color: black;
   }
   
   .steps__card:hover .steps__card-number{
@@ -913,7 +936,6 @@ body.dark-theme{
     .contact__container,
     .footer__container{
       grid-template-columns: repeat(2, 1fr);
-      margin-top: -80px;
     }
     
     .home{
@@ -943,6 +965,13 @@ body.dark-theme{
       width: initial;
     }
   }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
   
   /* For large devices */
   @media screen and (min-width: 992px){
@@ -952,12 +981,12 @@ body.dark-theme{
     }
   
     .section{
+      margin-top: -100px;
       padding: 8rem 0 1rem;
     }
     .section__title,
     .section__title-center{
       font-size: var(--h1-font-size);
-      color: lightgreen;
     }
   
     .home{

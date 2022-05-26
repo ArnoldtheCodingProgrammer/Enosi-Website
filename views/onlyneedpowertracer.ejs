@@ -7,13 +7,12 @@
     <title>
         Home 
     </title>
-    <link rel="stylesheet" href="/css/powertracer.css">
+    <link rel="stylesheet" href="/css/onlyneedpowertracer.css">
     <script src="/script.js"></script>
     <script src="/public/js/jquery.js"></script>
     <script src="/public/js/bootstrap.min.js"></script>
 </head>
-<body>    
-
+<body background="images/bestcircle.png">    
     <section class="about section container" id="about">
         <div class="about__container">
             <h1>Benefits of Power Tracer:</h1>
@@ -21,29 +20,48 @@
             <p>
                 Powertracer allows users to have traceability of where their energy comes from
             </p>
+
+            <p>
+                It’s better. Energy rollover is easier and cheaper!
+            </p>
+            <p>
+                Take control: Trade your energy with communities and households! Your choice!
+            </p>
+            <p>
+                Be informed: Trace your energy for the first time!
+            </p>
+            <p>
+                Need more? Buy more renewable energy and create less waste
+            </p>
+            <p>
+                All of the above at <b>NO</b> cost!
+            </p>
+    
             <br>
             <br>
          
-            <p>
+
                  <%if (solar == "yes") { %> 
-                     <h3>If you have solar panels, you can ultilise Powertracer's trading platform to trade your excess energy to other Powertracer users</h2>
-                     <br>
-                     <h3>
-                         Trading opportunities include being able to trade your excess energy to people that you konw 
-                         There will be options to trade with people that you know (all users must be using Powertracer)
-                         Or you can trade blindly to your own community at a price that you decide
-                     </h3>
+
+                    <h2>Trading Opportunities with solar panels:</h2>
+                     <p>If your residence has solar panels, you can ultilise Powertracer's trading platform to trade your excess energy to other Powertracer users</p>
+                     <p>
+                         Trading opportunities include being able to trade your excess energy to people that you know (all users must be using Powertracer)
+                    </p>
+                    <p>
+                    Or you can trade blindly to your own community at a price that you decide
+                        </p>
                  <% } else {%>
+                    <h2>Trading Opportunities with Powertracer:</h2>
+                    <p>
                      Trading opportunities include being able to purchase carbon-free energy from solar/wind/hydro farms 
-                     Traceability and 
+                    </p>
                  <% } %> 
-            </p>
             <br>
-            <p>
                  <% if (status == "no"){ %> 
-                     <h3 style="color: black"> NOTE: As you do not have a smart meter, a 2 week waiting period is needed in order for your energy retailer to swap your old meter for a smart meter in order to use Powertracer </h3>
+                     <h3 style="color: white"> NOTE: As you do not have a smart meter, a 2 week waiting period is needed in order for your energy retailer to swap your old meter for a smart meter in order to use Powertracer </h3>
                  <% } %>
-            </p>
+
             
             <a href="/paymentyes">
              <button class="button">Add Powertracer for Free!</button>

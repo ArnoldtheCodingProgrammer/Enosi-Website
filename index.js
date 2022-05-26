@@ -80,6 +80,7 @@ app.get("/onlyneedpowertracer", function(req,res)
 app.get("/paymentyes", function(req,res)
 {
     const company = energycompany
+    console.log(company)
     res.render("paymentyes", {company})
 
 })

@@ -17,6 +17,12 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
+  --earth-yellow: hsla(35, 56%, 61%, 1);
+  --maximum-blue: hsla(197, 37%, 54%, 1);
+  --cg-blue: hsla(196, 86%, 33%, 1);
+  --light-goldenrod-yellow: hsla(59, 74%, 88%, 1);
+  --medium-champagne: hsla(44, 63%, 75%, 1);
+  --rich-black-fogra-39: hsla(100, 16%, 4%, 1);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -396,6 +402,7 @@ body.dark-theme{
     display: inline-flex;
     align-items: center;
     column-gap: .5rem;
+    background-color: hsla(197, 37%, 54%, 1);
   }
   
   .button--link{
@@ -959,6 +966,7 @@ body.dark-theme{
     }
     .home__description{
       padding-right: 7rem;
+      color: hsla(100, 16%, 4%, 1);
     }
   
     .about__img{

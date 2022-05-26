@@ -325,6 +325,7 @@ body.dark-theme{
   
   .home__description{
     margin-bottom: var(--mb-2-5);
+    color: hsla(100, 16%, 4%, 1);
   }
   
   .home__social{
@@ -396,6 +397,7 @@ body.dark-theme{
     display: inline-flex;
     align-items: center;
     column-gap: .5rem;
+    color: black; 
   }
   
   .button--link{
