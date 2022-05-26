@@ -96,6 +96,7 @@ button{
 
 }
 
+
 h1,h2,h3{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
@@ -122,6 +123,15 @@ p{
 
 p:before{
   content:"• ";
+}
+
+.singlelinetext{
+  color: lightgreen; 
+  text-align: center;
+  margin-bottom: 20px;
+  text-underline-offset: 10px;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 /*=============== THEME ===============*/
