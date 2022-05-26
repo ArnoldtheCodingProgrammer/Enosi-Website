@@ -966,7 +966,7 @@ body.dark-theme{
     }
     .home__description{
       padding-right: 7rem;
-      color: hsla(100, 16%, 4%, 1);
+      color: white;
     }
   
     .about__img{
