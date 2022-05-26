@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home 
+    </title>
+    <link rel="stylesheet" href="/css/contactus.css">
+    <script src="/script.js"></script>
+    <script src="/public/js/jquery.js"></script>
+    <script src="/public/js/bootstrap.min.js"></script>
+</head>
+<body>   
+<body background="images/bestcircle.png">
+    <nav class="nav container">
+        <a href="/">
+            <i class='bx bx-circle nav__logo-icon'><img src="/images/tempImageForSave-9-430x430.png" alt="" width="100px"></i> 
+            </a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="/" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/getstarted" class="nav__link">Get Started</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/powertracer" class="nav__link">PowerTracer</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/contactus" class="nav__link active-link">Contact Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="https://support.enosi.energy/en/?q=community" class="nav__link">FAQ</a>
+                </li>
+            </ul>
+    
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+    
+        <div class="nav__btns">
+            <!-- Theme change button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+    
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact section container" id="contact">                
+        <div class="contact__container grid">
+            <div class="contact__box">
+                <h2 class="section__title">
+                    Reach out to us today!
+                </h2>
+
+                <div class="contact__data">
+                    <div class="contact__information">
+                        <h3 class="contact__subtitle">Call us for support</h3>
+                        <span class="contact__description">
+                            <i class="ri-phone-line contact__icon"></i>
+                            +999 888 777
+                        </span>
+                    </div>
+
+                    <div class="contact__information">
+                        <h3 class="contact__subtitle">Write to us by email</h3>
+                        <span class="contact__description">
+                            <i class="ri-mail-line contact__icon"></i>
+                            enosisupport@enosi.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="contact__form">
+                <div class="contact__inputs">
+                    <div class="contact__content">
+                        <input type="email" placeholder=" " class="contact__input">
+                        <label for="" class="contact__label">Email</label>
+                    </div>
+
+                    <div class="contact__content">
+                        <input type="text" placeholder=" " class="contact__input">
+                        <label for="" class="contact__label">Subject</label>
+                    </div>
+
+                    <div class="contact__content contact__area">
+                        <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                        <label for="" class="contact__label">Message</label>
+                    </div>
+                </div>
+
+                <button class="button button--flex">
+                    Send Message
+                    <i class="ri-arrow-right-up-line button__icon"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>

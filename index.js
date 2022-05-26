@@ -80,7 +80,6 @@ app.get("/onlyneedpowertracer", function(req,res)
 app.get("/paymentyes", function(req,res)
 {
     const company = energycompany
-    console.log(company)
     res.render("paymentyes", {company})
 
 })
@@ -88,6 +87,11 @@ app.get("/paymentyes", function(req,res)
 app.get("/congrats", function(req,res)
 {
     res.render("congrats")
+})
+
+app.get("/contactus", function(req, res)
+{
+    res.render("contactus")
 })
 
 app.get("/nextbusinessenergy", function(req, res)

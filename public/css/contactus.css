@@ -3,8 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem; /*56px*/
-
+  --header-height: 3.5rem; 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
@@ -17,12 +16,6 @@
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
-  --earth-yellow: hsla(35, 56%, 61%, 1);
-  --maximum-blue: hsla(197, 37%, 54%, 1);
-  --cg-blue: hsla(196, 86%, 33%, 1);
-  --light-goldenrod-yellow: hsla(59, 74%, 88%, 1);
-  --medium-champagne: hsla(44, 63%, 75%, 1);
-  --rich-black-fogra-39: hsla(100, 16%, 4%, 1);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -88,7 +81,7 @@ textarea{
 body{
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: hsla(100, 16%, 4%, 1);
   background-repeat: no-repeat;
   background-size: cover;
   transition: .4s; /*For animation dark mode*/
@@ -184,7 +177,7 @@ body.dark-theme{
   }
 
   .grid{
-    display: grid;
+    /* display: grid; */
   }
   
   .main{
@@ -378,8 +371,8 @@ body.dark-theme{
   /*=============== BUTTONS ===============*/
 .button{
     display: inline-block;
-    background-color: var(--first-color);
-    color: #FFF;
+    background-color: lightblue;
+    color: black;
     padding: 1rem 1.75rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
@@ -402,7 +395,6 @@ body.dark-theme{
     display: inline-flex;
     align-items: center;
     column-gap: .5rem;
-    background-color: hsla(197, 37%, 54%, 1);
   }
   
   .button--link{
@@ -430,7 +422,10 @@ body.dark-theme{
   }
   
   .about__description{
+    font-weight: bold;
     margin-bottom: var(--mb-2);
+    color: white; 
+ 
   }
   
   .about__details{
@@ -443,6 +438,11 @@ body.dark-theme{
     display: inline-flex;
     column-gap: .5rem;
     font-size: var(--small-font-size);
+    font-weight: bold;
+    color:white;
+  }
+  .about__details-description:before{
+    content:"• ";
   }
   
   .about__details-icon{
@@ -651,7 +651,7 @@ body.dark-theme{
   .contact__subtitle{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    color: var(--text-color);
+    color: white;
     margin-bottom: var(--mb-0-5);
   }
   
@@ -688,7 +688,7 @@ body.dark-theme{
     padding: 1rem 1rem 1rem 0;
     background: none;
   
-    color: var(--text-color);
+    color: white;
   
     
     border: none;
@@ -913,6 +913,7 @@ body.dark-theme{
     .contact__container,
     .footer__container{
       grid-template-columns: repeat(2, 1fr);
+      margin-top: -80px;
     }
     
     .home{
@@ -956,6 +957,7 @@ body.dark-theme{
     .section__title,
     .section__title-center{
       font-size: var(--h1-font-size);
+      color: lightgreen;
     }
   
     .home{
@@ -966,7 +968,6 @@ body.dark-theme{
     }
     .home__description{
       padding-right: 7rem;
-      color: hsla(100, 16%, 4%, 1);
     }
   
     .about__img{
