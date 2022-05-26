@@ -49,7 +49,7 @@ app.post("/form", function(req, res)
     global.solarpanel = solarpanel
     global.smartmeter = smartmeter
     global.energycompany = energycompany
-    if (energycompany === "Energy Local" )
+    if (energycompany === "Energy Local" || energycompany === "Energy Locals")
     {
 
         res.redirect("onlyneedpowertracer")
